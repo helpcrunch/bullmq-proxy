@@ -14,10 +14,6 @@ jobs:
     env:
       IMG_NAME: ghcr.io/helpcrunch/bullmq-proxy
     steps:
-      - name: Debug
-        run: |
-          echo "github.ref -> {{ github.ref }}"
-
       - name: Docker metadata
         id: meta
         uses: docker/metadata-action@v5
