@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMG_NAME: ghcr.io/helpcrunch/bullmq-proxy
+    permissions:
+      packages: write
+      contents: read
     steps:
       - name: Docker metadata
         id: meta
